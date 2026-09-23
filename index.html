@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NEXORA 3D Battle Arena</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="game"></div>
+
+  <!-- HUD -->
+
+  <div id="hud">
+
+    <div class="top">
+
+      <div class="logo">
+        NEX<span>ORA</span>
+      </div>
+
+      <div class="stats">
+
+        <div class="stat">
+          <small>SCORE</small>
+          <strong id="score">0</strong>
+        </div>
+
+        <div class="stat">
+          <small>WAVE</small>
+          <strong id="wave">1</strong>
+        </div>
+
+        <div class="stat">
+          <small>ENEMIES</small>
+          <strong id="enemyCount">0</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Crosshair -->
+
+    <div id="crosshair"></div>
+
+
+    <!-- Health -->
+
+    <div class="health-box">
+
+      <div class="health-title">
+        PLAYER HEALTH
+      </div>
+
+      <div class="health-background">
+
+        <div id="health"></div>
+
+      </div>
+
+      <div class="health-number">
+        <span id="healthText">100</span> HP
+      </div>
+
+    </div>
+
+
+    <!-- Controls -->
+
+    <div class="controls">
+
+      <b>CONTROLS</b>
+
+      <br>
+
+      W A S D — Move
+
+      <br>
+
+      Mouse — Aim
+
+      <br>
+
+      Left Click — Shoot
+
+      <br>
+
+      ESC — Unlock Mouse
+
+    </div>
+
+  </div>
+
+
+  <!-- START SCREEN -->
+
+  <div id="startScreen">
+
+    <div class="menu">
+
+      <div class="menu-logo">
+        NEX<span>ORA</span>
+      </div>
+
+      <h1>3D BATTLE ARENA</h1>
+
+      <p>
+        Enter the arena and survive endless enemy waves.
+      </p>
+
+      <button id="startButton">
+        START GAME
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- GAME OVER -->
+
+  <div id="gameOver">
+
+    <div class="menu">
+
+      <h1>GAME OVER</h1>
+
+      <p>
+        Your final score
+      </p>
+
+      <div class="final-score" id="finalScore">
+        0
+      </div>
+
+      <button id="restartButton">
+        PLAY AGAIN
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- THREE.JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
