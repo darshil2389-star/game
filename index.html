@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA — Gaming Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo">NEX<span>ORA</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#leaderboard">Leaderboard</a>
+      <a href="#profile">Profile</a>
+    </nav>
+
+    <button class="login-btn" onclick="openLogin()">LOGIN</button>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="tag">⚡ NEXT GENERATION GAMING</p>
+
+        <h1>ENTER THE<br><span>GAMEVERSE</span></h1>
+
+        <p class="hero-text">
+          Play. Compete. Level up. Become the ultimate gaming champion.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#games" class="primary-btn">EXPLORE GAMES</a>
+          <a href="#leaderboard" class="secondary-btn">LEADERBOARD</a>
+        </div>
+      </div>
+
+      <div class="orb">
+        <div class="orb-core"></div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-card">
+        <h2>25K+</h2>
+        <p>Players</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>120+</h2>
+        <p>Games</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>850K+</h2>
+        <p>Matches</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>24/7</h2>
+        <p>Online</p>
+      </div>
+    </section>
+
+    <!-- GAMES -->
+    <section id="games" class="section">
+      <div class="section-heading">
+        <p>DISCOVER</p>
+        <h2>POPULAR GAMES</h2>
+      </div>
+
+      <div class="game-grid">
+
+        <article class="game-card">
+          <div class="game-image game-one">
+            <span>🔥 HOT</span>
+          </div>
+          <div class="game-info">
+            <h3>Cyber Strike</h3>
+            <p>Action • Multiplayer</p>
+            <button onclick="playGame('Cyber Strike')">PLAY NOW</button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-image game-two">
+            <span>⚡ NEW</span>
+          </div>
+          <div class="game-info">
+            <h3>Neon Racer</h3>
+            <p>Racing • Arcade</p>
+            <button onclick="playGame('Neon Racer')">PLAY NOW</button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-image game-three">
+            <span>👑 TOP</span>
+          </div>
+          <div class="game-info">
+            <h3>Battle Arena</h3>
+            <p>Strategy • PvP</p>
+            <button onclick="playGame('Battle Arena')">PLAY NOW</button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-image game-four">
+            <span>🎯 PRO</span>
+          </div>
+          <div class="game-info">
+            <h3>Sniper X</h3>
+            <p>Shooter • Competitive</p>
+            <button onclick="playGame('Sniper X')">PLAY NOW</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- LEADERBOARD -->
+    <section id="leaderboard" class="section leaderboard-section">
+
+      <div class="section-heading">
+        <p>COMPETE</p>
+        <h2>GLOBAL LEADERBOARD</h2>
+      </div>
+
+      <div class="leaderboard">
+
+        <div class="player top-player">
+          <div class="rank">01</div>
+          <div class="avatar">👑</div>
+          <div class="player-info">
+            <h3>ShadowX</h3>
+            <p>Level 89</p>
+          </div>
+          <strong>98,540 XP</strong>
+        </div>
+
+        <div class="player">
+          <div class="rank">02</div>
+          <div class="avatar">🔥</div>
+          <div class="player-info">
+            <h3>CyberWolf</h3>
+            <p>Level 84</p>
+          </div>
+          <strong>94,210 XP</strong>
+        </div>
+
+        <div class="player">
+          <div class="rank">03</div>
+          <div class="avatar">⚡</div>
+          <div class="player-info">
+            <h3>NovaKing</h3>
+            <p>Level 81</p>
+          </div>
+          <strong>91,750 XP</strong>
+        </div>
+
+        <div class="player">
+          <div class="rank">04</div>
+          <div class="avatar">🎮</div>
+          <div class="player-info">
+            <h3>DarkGhost</h3>
+            <p>Level 77</p>
+          </div>
+          <strong>87,430 XP</strong>
+        </div>
+
+        <div class="player">
+          <div class="rank">05</div>
+          <div class="avatar">💀</div>
+          <div class="player-info">
+            <h3>VenomX</h3>
+            <p>Level 74</p>
+          </div>
+          <strong>83,920 XP</strong>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="section profile-section">
+
+      <div class="profile-card">
+
+        <div class="profile-avatar">🎮</div>
+
+        <div class="profile-data">
+          <p>PLAYER PROFILE</p>
+          <h2>Gamer_001</h2>
+
+          <div class="level">
+            <span>LEVEL 42</span>
+            <span>7,840 / 10,000 XP</span>
+          </div>
+
+          <div class="progress">
+            <div></div>
+          </div>
+
+          <div class="profile-stats">
+            <div>
+              <strong>128</strong>
+              <small>Matches</small>
+            </div>
+
+            <div>
+              <strong>87</strong>
+              <small>Wins</small>
+            </div>
+
+            <div>
+              <strong>12</strong>
+              <small>Badges</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <h2>NEXORA</h2>
+    <p>© 2026 NEXORA Gaming. All rights reserved.</p>
+  </footer>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" class="modal">
+    <div class="modal-box">
+
+      <button class="close" onclick="closeLogin()">×</button>
+
+      <h2>WELCOME BACK</h2>
+      <p>Login to continue your gaming journey.</p>
+
+      <input type="email" id="email" placeholder="Email address">
+      <input type="password" id="password" placeholder="Password">
+
+      <button class="login-submit" onclick="login()">LOGIN</button>
+
+      <div class="or">OR</div>
+
+      <button class="google-btn" onclick="googleLogin()">
+        🔵 Continue with Google
+      </button>
+
+      <p id="loginMessage"></p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
